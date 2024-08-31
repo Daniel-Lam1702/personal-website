@@ -1,0 +1,122 @@
+.kalam-light {
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kalam-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kalam-bold {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Responsiveness media query */
+
+@media (width > 1024px) {
+    .navbar-links {
+        gap: 78px !important;
+    }
+    .introduction{
+        gap: 100px !important;
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+    }
+    .tech-logos{
+        gap: 250px !important;
+    }
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #E2B5B5;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    background-color: #AD1945;
+    padding: 5px 0px 5px 0px;
+    margin-bottom: 50px;
+}
+/* Class selector to center content */
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Navbar links styling */
+.navbar-links {
+    list-style: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    gap: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar-link {
+    color: white;
+}
+.navbar-link:link {
+    text-decoration: none;
+}
+.navbar-link:visited {
+    text-decoration: none;
+}
+.navbar-link:hover {
+    text-decoration: none;
+    color: #026b8b;
+}
+.navbar-link:active {
+    text-decoration: none;
+}
+.navbar-link-item {
+    text-align: center;
+}
+/*Selected link*/
+.selected-link {
+    color: #070030;
+}
+
+/*Tech Logos*/
+.tech-logos{
+    gap: 100px;
+
+}
+
+.tech-logo-container{
+    background-color: #00000084;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+/*Introduction design*/
+.introduction{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*Profile picture*/
+#profile-picture {
+    border-radius: 100%;
+}
+
+/* Styling the main content */
+.introduction{
+    gap: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tech-logos img {
+    width: 80px;
+}
