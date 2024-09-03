@@ -1,0 +1,21 @@
+.projects-container {
+    display: flex;
+    gap: 100px;
+}
+
+/*Styling project card*/
+.project {
+    background-color: #07003084;
+    color: white;
+    border-radius: 25%;
+}
+
+.link-container {
+    display: flex;
+    justify-content: right;
+}
+.github-image {
+    width: 10px;
+    height: 10px;
+}
+
