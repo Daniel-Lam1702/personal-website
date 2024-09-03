@@ -6,11 +6,14 @@
     }
     .introduction{
         gap: 100px !important;
-        margin-left: 50px !important;
-        margin-right: 50px !important;
+        margin-left: 100px !important;
+        margin-right: 100px !important;
     }
     .tech-logos{
         gap: 250px !important;
+    }
+    .introduction-text{
+        font-size: 36px;
     }
 }
 
@@ -31,8 +34,15 @@
 /*Introduction design*/
 .introduction{
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 34px;
+    margin-bottom: 34px;
+    gap: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.introduction-text{
+    font-size: 18px;
 }
 
 /*Profile picture*/
@@ -40,13 +50,11 @@
     border-radius: 100%;
 }
 
-/* Styling the main content */
-.introduction{
-    gap: 70px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
 
 .tech-logos img {
     width: 80px;
+}
+
+.introduction-content {
+    margin-bottom: 34px;
 }

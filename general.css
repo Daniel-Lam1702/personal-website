@@ -25,9 +25,9 @@ body {
 /* Header styling */
 header {
     width: 100%;
-    background-color: #AD1945;
+    background-color: #ad1945c7;
     padding: 5px 0px 5px 0px;
-    margin-bottom: 50px;
+    margin-bottom: 34px;
 }
 /* Class selector to center content */
 .center-content {
@@ -43,6 +43,9 @@ header {
     gap: 50px;
     margin-top: 5px;
     margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
 }
 
 .navbar-link {
