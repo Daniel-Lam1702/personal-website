@@ -6,7 +6,7 @@
     align-content: center;
     background-color: #07003080;
     color: white;
-    border-radius: 2%;
+    border-radius: 10px 10px 10px 10px;
     margin-bottom: 20px;
     padding: 10px 10px 10px 10px;
 }
