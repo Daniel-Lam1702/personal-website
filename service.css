@@ -1,0 +1,12 @@
+.service-content-container {
+    width: 90%;
+    text-align: center;
+    align-self: center;
+    display: flex;
+    align-content: center;
+    background-color: #07003080;
+    color: white;
+    border-radius: 2%;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 10px;
+}
