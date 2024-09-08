@@ -10,3 +10,48 @@
     margin-bottom: 20px;
     padding: 10px 10px 10px 10px;
 }
+
+.button-next, .button-next-disabled {
+    width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+    background: transparent;
+    border-right: 0;
+}
+
+.button-next {
+	border-left: 50px solid #07003080;
+}
+
+.button-next:hover {
+    cursor: pointer;
+	border-left: 50px solid #ad1945c7;
+    
+}
+
+.button-next-disabled {
+    border-left: 50px solid #818183;
+}
+
+.button-previous, .button-previous-disabled {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+    border-left: 0;
+    background: transparent;
+}
+
+.button-previous {
+	border-right: 50px solid #07003080;
+}
+
+.button-previous:hover {
+    cursor: pointer;
+	border-right: 50px solid #ad1945c7;
+}
+
+.button-previous-disabled {
+	border-right: 50px solid #818183;
+}
