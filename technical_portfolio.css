@@ -29,10 +29,5 @@
 
 .project-image {
     width: 500px;
-}
-.api-ref:hover {
-    color: blue !important;
-}
-.api-ref:visited{
-    color: rgb(37, 185, 253);
+    border-radius: 10px 10px 10px 10px;
 }
