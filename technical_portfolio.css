@@ -20,8 +20,19 @@
 .github-image {
     width: 25px;
     height: 25px;
+    animation: height 3s ease-in 1s;
+}
+.github-image:hover {
+    width: 30px;
+    height: 30px;
 }
 
 .project-image {
     width: 500px;
+}
+.api-ref:hover {
+    color: blue !important;
+}
+.api-ref:visited{
+    color: rgb(37, 185, 253);
 }
