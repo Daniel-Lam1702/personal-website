@@ -6,13 +6,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="index.css"></link>
+    <link rel="stylesheet" type="text/css" href="general.css"></link>
+    <link rel="stylesheet" href="about_me.css">
   </head>
   <body>
     <header class="navbar kalam-bold">
-      <ul class="navbar-links center-content">
+      <ul class="navbar-links">
         <li class="navbar-link-item">
-          <a href="index.html" class="navbar-link selected-link">
+          <a href="index.html" class="navbar-link">
             Home
           </a>
         </li>
@@ -32,47 +33,19 @@
           </a>
         </li>
         <li class="navbar-link-item">
-          <a class="navbar-link" href="about_me.html">
+          <a class="navbar-link selected-link" href="about_me.html">
             About Me
           </a>
         </li>
         <input type="checkbox"></input>
       </ul>
     </header>
-    <div>
-      <div class="tech-logos center-content">
-        <div class="center-content tech-logo-container">
-          <img alt="python" src="python.png"></img>
-        </div>
-        <div class="center-content tech-logo-container">
-          <img alt="flask" src="flask.png"></img>
-        </div>
-        <div class="center-content tech-logo-container">
-          <img alt="java" src="java.png"></img>
-        </div>
-      </div>
-      <div class="introduction center-content">
-        <div class="profile-picture-container">
-          <img alt="Daniel" src="profile_picture.jpg" width="200" id="profile-picture"></img>
-        </div>
-        <div>
-          <p class="kalam-regular">
-            I am Daniel Lam, a junior at Texas A&M University majoring in Computer Science with a passion for software development. I gained valuable experience in full-stack development through internships, enhancing system efficiency and user experiences. 
-          </p>
-        </div>
-      </div>
-      </div>
-      <div class="tech-logos center-content">
-        <div class="center-content tech-logo-container">
-          <img alt="aws" src="aws.svg"></img>
-        </div>
-        <div class="center-content tech-logo-container">
-          <img alt="django" src="django.png"></img>
-        </div>
-        <div class="center-content tech-logo-container">
-          <img alt="react" src="reactjs.png"></img>
-        </div>
-      </div>
+    <div class="chat-container">
+      <div id="chat-box"></div>
+      <input type="text" id="user-input" placeholder="Type your message here..." />
+      <button id="send-btn">Send</button>
     </div>
+
+    <script src="about_me.js"></script>
   </body>
 </html>

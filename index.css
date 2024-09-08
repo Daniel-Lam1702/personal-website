@@ -43,8 +43,24 @@
 
 .introduction-text{
     font-size: 18px;
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 2em;
+}
+@keyframes typing {
+    from {
+      width: 0
+    }
 }
 
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+}
 /*Profile picture*/
 #profile-picture {
     border-radius: 100%;
@@ -57,4 +73,29 @@
 
 .introduction-content {
     margin-bottom: 34px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-image {
+    width: 25px;
+    height: 25px;
+}
+
+.contact-me-button {
+    padding: 5px 5px 5px 5px;
+    background-color: #ad1945c7;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+}
+
+.contact-me-button:hover {
+    cursor: pointer;
+    color: black;
 }
