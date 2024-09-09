@@ -286,7 +286,7 @@ input:checked + .slider:before {
     background-color: #ad19458d;
     color: white;
     border-top: white;
-    border-top-style: dashed;
+    border-top-style: solid;
     border-top-width: 3px;
     padding: 20px;
     display: flex;
@@ -339,7 +339,7 @@ input:checked + .slider:before {
 }
 .technical-areas-list li {
     padding: 10px;
-    border-style: dashed;
+    border-style: solid;
     width: 250px;
     display: flex;
     font-size: 18px;
@@ -362,7 +362,7 @@ h2 {
     display: flex;
     gap: 25px;
     border: white;
-    border-style: dashed;
+    border-style: solid;
     padding: 10px;
     background: #ad1945c7;
 }
