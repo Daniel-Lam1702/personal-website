@@ -37,3 +37,45 @@ function toggleServiceContent(number) {
         `;
     }
 }
+
+function toggleStyleSheet(){
+  console.log("Triggered");
+  // Task 1
+  // 1 (a) Get style element by ID
+  let element = document.getElementById("mainStyleSheet");
+
+  // 1 (b) Check the current stylesheet file name
+  let href = element.getAttribute("href");
+
+  // 1 (c) Determine new stylesheet file name based on the current one
+  let file_name = href === "style_1.css" ? "style_2.css" : "style_1.css";
+
+  // 1 (d) Replace stylesheet with new stylesheet
+  element.setAttribute("href", file_name);
+
+  // TASK 2
+  // 2 (d) For persistence when page is refreshed, save new stylesheet name to localStorage
+  localStorage.setItem("stylesheet", file_name);
+}
+
+window.onload = function(){
+  // TASK 2: Persist stylesheet on refresh
+  // 2 (a) Get stylesheet name from local storage
+  let savedStyleSheet = localStorage.getItem("stylesheet");
+
+  // 2 (b) Get HTML style element by ID
+  let element = document.getElementById("mainStyleSheet");
+
+  // 2 (c) If a stylesheet was saved, replace href attribute of the element
+  if (savedStyleSheet) {
+    var slider_element = document.getElementById("toggle-switch");
+    if(savedStyleSheet === "style_2.css"){
+      slider_element.checked = true;  // Set checked to true
+    } else {
+      slider_element.checked = false; // Set checked to false if not style_2.css
+    }
+    element.setAttribute("href", savedStyleSheet);
+  }else {
+    element.setAttribute("href", "style_1.css");
+  }
+}
