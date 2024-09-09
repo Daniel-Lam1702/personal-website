@@ -1,0 +1,447 @@
+/*------------------General Styling-----------------------------*/
+.kalam-light {
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kalam-regular {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kalam-bold {
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #E2B5B5;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    background-color: #ad1945c7;
+    padding: 5px 0px 5px 0px;
+    margin-bottom: 34px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+/* Class selector to center content */
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Navbar links styling */
+.navbar-links {
+    list-style: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    gap: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.navbar-link {
+    color: white;
+}
+.navbar-link:link {
+    text-decoration: none;
+}
+.navbar-link:visited {
+    text-decoration: none;
+}
+.navbar-link:hover {
+    text-decoration: none;
+    color: #b2b0b0;
+}
+.navbar-link:active {
+    text-decoration: none;
+}
+.navbar-link-item {
+    text-align: center;
+}
+/*Selected link*/
+.selected-link {
+    color: #070030;
+}
+.margin-bottom {
+    margin-bottom: 34px;
+}
+
+/* The switch container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Slider styles */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+/* Checked state */
+input:checked + .slider {
+    background-color: #ad1945c7;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Rounded switch */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* base references styling */
+
+.base-ref:hover {
+    color: blue !important;
+}
+.base-ref:visited{
+    color: rgb(37, 185, 253);
+}
+
+/*------------------------------index.html styling-----------------------------------*/
+
+/* Responsiveness media query */
+
+/* For large screens, 1024px and above */
+@media (min-width: 1024px) {
+    .navbar-links {
+        gap: 78px !important;
+    }
+    .introduction {
+        gap: 100px !important;
+        margin-left: 100px !important;
+        margin-right: 100px !important;
+    }
+    .tech-logos {
+        gap: 250px !important;
+    }
+    .introduction-text {
+        font-size: 24px !important; /* Added ! for important */
+    }
+}
+
+/* For small screens, 320px to 1024px */
+@media (min-width: 320px) and (max-width: 1023px) {
+    .introduction-text {
+        font-size: 18px !important; /* Added ! for important */
+    }
+}
+
+/* Tech Logos */
+.tech-logos {
+    gap: 100px;
+}
+
+.tech-logo-container {
+    background-color: #00000084;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0);
+}
+
+/* Introduction design */
+.introduction {
+    display: flex;
+    margin-top: 34px;
+    margin-bottom: 34px;
+    gap: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.introduction-text {
+    font-size: 12px;
+    margin-top: 0;
+}
+.introduction-container {
+    background: #07003084;
+    padding: 15px 15px 15px 15px;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+}
+/* Profile picture */
+#profile-picture {
+    border-radius: 100%;
+}
+
+.tech-logos img {
+    width: 80px;
+}
+
+.introduction-content {
+    margin-bottom: 34px;
+}
+
+/* Contact buttons */
+.contact-buttons {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-image {
+    width: 25px;
+    height: 25px;
+    animation: height 3s ease 1s;
+}
+
+.contact-image:hover {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-me-button {
+    padding: 5px 5px 5px 5px;
+    background-color: #ad1945c7;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    animation: padding 5s ease 1s; 
+}
+
+.contact-me-button:hover {
+    cursor: pointer;
+    color: black;
+    padding: 7.5px 7.5px 7.5px 7.5px;
+}
+
+/*----------------------technical_portfolio.html-------------------------------------*/
+.projects-container {
+    gap: 50px;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+/*Styling project card*/
+.project {
+    background-color: #07003084;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 20px;
+    width: 500px
+}
+
+.link-container {
+    display: flex;
+    justify-content: right;
+}
+.github-image {
+    width: 25px;
+    height: 25px;
+    animation: height 3s ease-in 1s;
+}
+.github-image:hover {
+    width: 30px;
+    height: 30px;
+}
+
+.project-image {
+    width: 500px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/*-----------------------------qualifications.html------------------------------------*/
+
+/* Reponsiveness */
+@media (width > 1240px) {
+    .tech-stack {
+        gap: 50px !important;
+    }
+}
+.tech-stack-rows {
+    flex-direction: column;
+    gap: 25px;
+}
+.tech-stack img {
+    width: 50px;
+    height: 50px;
+}
+.tech-stack {
+    display: flex;
+    gap: 25px;
+}
+.section {
+    margin-left: 25px;
+}
+.resume-container {
+    margin-bottom: 25px;
+}
+
+/*---------------service.html-------------------------*/
+@media (min-width: 620px) {
+    .service-content-container {
+        font-size: 18px !important;
+    }
+}
+.service-content-container {
+    width: 90%;
+    text-align: center;
+    align-self: center;
+    display: flex;
+    align-content: center;
+    background-color: #07003080;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+}
+
+.button-next, .button-next-disabled {
+    width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+    background: transparent;
+    border-right: 0;
+}
+
+.button-next {
+	border-left: 50px solid #07003080;
+}
+
+.button-next:hover {
+    cursor: pointer;
+	border-left: 50px solid #ad1945c7;
+    
+}
+
+.button-next-disabled {
+    border-left: 50px solid #818183;
+}
+
+.button-previous, .button-previous-disabled {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+    border-left: 0;
+    background: transparent;
+}
+
+.button-previous {
+	border-right: 50px solid #07003080;
+}
+
+.button-previous:hover {
+    cursor: pointer;
+	border-right: 50px solid #ad1945c7;
+}
+
+.button-previous-disabled {
+	border-right: 50px solid #818183;
+}
+
+/*------------------------------about_me.css----------------------------------------*/
+.chat-container {
+    width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-box {
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+#user-input {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#send-btn {
+    width: 20%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #45a049;
+}
+
+.message {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.user-message {
+    background-color: #d1e7dd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: auto;
+    max-width: 75%;
+    word-wrap: break-word;
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: auto;
+    max-width: 75%;
+    word-wrap: break-word;
+}
