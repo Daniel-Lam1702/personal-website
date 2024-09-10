@@ -6,12 +6,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="" id="mainStyleSheet"></link>
+    <script>
+      // Persist stylesheet before rendering the page
+      (function() {
+        let savedStyleSheet = localStorage.getItem("stylesheet");
+        if (!savedStyleSheet) {
+          savedStyleSheet = "style_1.css";  // Default stylesheet if none is saved
+        }
+        // Inject the correct stylesheet in the head before rendering the page
+        document.write('<link id="mainStyleSheet" rel="stylesheet" href="' + savedStyleSheet + '">');
+      })();
+    </script>
     <script src="function.js"></script>
   </head>
   <body>
     <header class="navbar kalam-bold">
-      <ul class="navbar-links">
+      <button class="burger-button" onclick="openNavbar()"><img alt="Open navigation bar" src="burger.png"></img></button>
+      <ul class="navbar-links" id="navbar-links">
+        <li class="close-button-container">
+          <button onclick="hideNavbar()">
+            X
+          </button>
+        </li>
         <li class="navbar-link-item">
           <a href="index.html" class="navbar-link">
             Home
@@ -37,10 +53,12 @@
             About Me
           </a>
         </li>
-        <label class="switch">
-          <input type="checkbox" onclick="toggleStyleSheet()" id="toggle-switch">
-          <span class="slider round"></span>
-        </label>
+        <li class="center-content">
+          <label class="switch">
+            <input type="checkbox" onclick="toggleStyleSheet()" id="toggle-switch">
+            <span class="slider round"></span>
+          </label>
+        </li>
       </ul>
     </header>
     <div>

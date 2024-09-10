@@ -39,7 +39,6 @@ function toggleServiceContent(number) {
 }
 
 function toggleStyleSheet(){
-  console.log("Triggered");
   // Task 1
   // 1 (a) Get style element by ID
   let element = document.getElementById("mainStyleSheet");
@@ -56,6 +55,20 @@ function toggleStyleSheet(){
   // TASK 2
   // 2 (d) For persistence when page is refreshed, save new stylesheet name to localStorage
   localStorage.setItem("stylesheet", file_name);
+}
+
+function hideNavbar() {
+  //Hide the navbar to a left position of -180px
+  let element = document.getElementById("navbar-links");
+  element.style.animation = 'moveToLeft 1s ease-in-out forwards';
+  element.style.left = '-200px';
+}
+
+function openNavbar() {
+    //Hide the navbar to a left position of -180px
+    let element = document.getElementById("navbar-links");
+    element.style.animation = 'moveToRight 1s ease-in-out forwards';
+    element.style.left = '0';
 }
 
 window.onload = function(){
