@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="about_me.css" rel="stylesheet">
     <script>
       // Persist stylesheet before rendering the page
       (function() {
@@ -61,12 +62,35 @@
         </li>
       </ul>
     </header>
-    <div class="chat-container">
-      <div id="chat-box"></div>
-      <input type="text" id="user-input" placeholder="Type your message here..." />
-      <button id="send-btn">Send</button>
+    <div class="main-container">
+        <div class="header">
+            <h1>Daniel's Resume Chatbot</h1>
+            <button id="viewRequestSummaryBtn" onclick="toggleRequestSummary()">View Request Summary</button>
+        </div>
+        
+        <div id="requestSummary" class="request-summary hidden">
+            <h2>Request Summary</h2>
+            <p>Here is a summary of the requests made during the creation of this chatbot:</p>
+            <ul>
+                <li><strong>Initial Request:</strong> Create a chatbot that knows about Daniel based on the information in his resume.</li>
+                <li><strong>API Preference:</strong> Use a free API excluding OpenAI’s API, and switched to Cohere.</li>
+                <li><strong>Chatbot Functionality:</strong> The chatbot should dynamically answer questions about Daniel's skills, education, and experience.</li>
+                <li><strong>Improved Chat UI:</strong> Improve the chat interface and add a toggle for a summary section.</li>
+                <li><strong>Request Summary:</strong> Display the requests made to create this chatbot.</li>
+            </ul>
+            <button id="closeRequestSummaryBtn" onclick="toggleRequestSummary()">Close Request Summary</button>
+        </div>
+        
+        <div class="chat-container">
+            <div id="chatbox" class="chatbox">
+                <div class="message bot-message">Hi! I'm your personal resume assistant. Ask me anything about Daniel's experience, skills, education, or projects!</div>
+            </div>
+            <div class="input-container">
+                <input id="userInput" type="text" placeholder="Ask a question..." onkeypress="if(event.key === 'Enter') sendMessage()">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
     </div>
-
     <script src="about_me.js"></script>
   </body>
 </html>
