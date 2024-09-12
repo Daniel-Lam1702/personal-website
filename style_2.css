@@ -297,7 +297,7 @@ input:checked + .slider:before {
 
 .contact-me-button:hover {
     cursor: pointer;
-    color: black;
+    color: #ad1945c7;
     padding: 7.5px 7.5px 7.5px 7.5px;
 }
 
