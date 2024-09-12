@@ -126,3 +126,31 @@ function getCohereResponse(userMessage, resumeContext) {
         addMessage('bot-message', "I'm having trouble connecting to the chatbot service.");
     });
 }
+
+// Open the Navbar
+function openNavbar() {
+    const navbar = document.getElementById('navbar-links');
+    navbar.classList.add('visible');
+    navbar.classList.remove('hidden');
+}
+
+// Hide the Navbar
+function hideNavbar() {
+    const navbar = document.getElementById('navbar-links');
+    navbar.classList.add('hidden');
+    navbar.classList.remove('visible');
+}
+
+// Toggle Stylesheet (for night mode, for example)
+function toggleStyleSheet() {
+    const toggleSwitch = document.getElementById('toggle-switch');
+    if (toggleSwitch.checked) {
+        // Example of toggling a dark mode stylesheet
+        document.body.style.backgroundColor = '#333';
+        document.body.style.color = '#fff';
+    } else {
+        // Revert to default
+        document.body.style.backgroundColor = '#fff';
+        document.body.style.color = '#000';
+    }
+}
