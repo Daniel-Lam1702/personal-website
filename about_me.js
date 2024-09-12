@@ -1,5 +1,4 @@
 // Fetch API key securely from the environment variable (from config.js)
-import { COHERE_API_KEY } from './config.js';
 const chatbox = document.getElementById('chatbox');
 
 // Function to toggle the request summary visibility
@@ -56,7 +55,7 @@ const resumeData = {
 
 // Cohere API Key
 // If you need the api_key, let me know. I'm not adding it to the github for security reasons.
-const apiKey = "COHERE_API_KEY";  // Replace with your actual Cohere API key. 
+const apiKey = "yJCMmWFxYdqJTHSQdQ1WjScq043nvU73cjXnEqLM";  // Replace with your actual Cohere API key. 
 
 function sendMessage() {
     const userInput = document.getElementById('userInput');
